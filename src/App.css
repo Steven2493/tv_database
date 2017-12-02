@@ -1,0 +1,236 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#app-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 1) 100%);
+  height: 100%;
+}
+
+.tabContainer {
+  text-align: center;
+  color:white;
+  background: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,2));
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.tvContainer {
+  margin: 0 auto;
+  text-align: center;
+  color:white;
+  background: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,2));
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.tvPoster {
+  float: left;
+  height: auto;
+  width: auto;
+  right: 60%;
+  max-width: 40%;
+}
+
+.tvInfoContainer {
+  position: fixed;
+  left: 40%;
+  padding: 2%;
+}
+.title {
+  font-size: 3em;
+  float: left;
+  margin-bottom: 0;
+}
+
+p {
+  display: block;
+  font-family: Lato;
+}
+
+.plot, .stats{
+  float:left;
+}
+.plot {
+  text-align: left;
+}
+.searchBar{
+  position: absolute;
+  right: 2%;
+  z-index: 1;
+}
+.react-autosuggest__container {
+  position: relative;
+}
+.react-autosuggest__input {
+  background-color: transparent;
+  width: 240px;
+  height: 30px;
+  padding: 10px 20px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 51px;
+  width: 280px;
+  border: 1px solid #aaa;
+  background: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,2));
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background-color: blue;
+}
+
+.react-autosuggest__suggestion-match {
+  color: yellow;
+  font-weight: bold;
+}
+
+.react-tabs [role=tablist] {
+	margin: 0 0 10px;
+	padding: 0;
+  text-align: center;
+  padding-top: 2%;
+  color: red;
+}
+
+.react-tabs [role=tab] {
+	display: inline-block;
+	border: 1px solid transparent;
+	border-bottom: none;
+	position: relative;
+	list-style: none;
+	padding: 6px 12px;
+	cursor: pointer;
+	position: relative;
+}
+
+.react-tabs [role=tab][aria-selected=true] {
+	background: #fff;
+	border-color: #aaa;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+}
+
+.react-tabs [role=tab]:focus {
+	box-shadow: 0 0 5px hsl(208, 99%, 50%);
+	border-color: hsl(208, 99%, 50%);
+	outline: none;
+}
+
+.react-tabs [role=tab]:focus:after {
+	content: '';
+	position: absolute;
+	height: 5px;
+	left: -4px;
+	right: -4px;
+	bottom: -5px;
+	background: #fff;
+}
+
+.topRatedContainer {
+  margin: 0 auto;
+  text-align: center;
+  color:white;
+  background: linear-gradient(to top, rgba(255,0,0,0), rgba(0,0,0,2));
+  width: 70%;
+  left: 50%;
+  top: 48%;
+  height: 70%;
+  bottom: 0;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.topRatedCard {
+  height: 100%;
+   width: 100%;
+   overflow: auto;
+   padding-right: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.tvCard {
+  display: inline-block;
+  text-align: left;
+  padding: 20px;
+}
+
+.tvCard p {
+  padding-top: 5%;
+  font-size: 1.3em;
+  margin-left: 250px;
+  overflow: hidden;
+}
+
+.topRatedPoster {
+  float: left;
+  right: 60%;
+  min-width: 20%;
+  max-width: 20%;
+}
+.plotSummary p {
+  font-size: 1em;
+  max-height: 200px;
+  overflow: auto;
+}
